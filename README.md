@@ -1,5 +1,5 @@
 # FreeCAD Part Attachment Python Example
-The purpose of this repository is to show a minimal example of [FreeCAD's Part Attachment Feature](https://wiki.freecadweb.org/Part_Attachment) in Python using [scripted objects](https://wiki.freecadweb.org/FeaturePython_Objects) in Python.
+The purpose of this repository is to show a minimal example of [FreeCAD's Part Attachment Feature](https://wiki.freecadweb.org/Part_Attachment) using [scripted objects](https://wiki.freecadweb.org/FeaturePython_Objects) in Python.
 
 See [part_attachment_example.py](./part_attachment_example.py) for the full and complete example.
 
