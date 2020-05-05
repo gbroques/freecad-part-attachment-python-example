@@ -3,6 +3,10 @@ The purpose of this repository is to show a minimal example of [FreeCAD's Part A
 
 See [PartAttachmentExample.FCMacro](./PartAttachmentExample.FCMacro) for the full and complete example.
 
+The following **GIF** demonstrates attaching our custom box to a cylinder, and automatically updating it's position when the cylinder's position changes.
+
+![Custom Box Attached To Cylinder Example](./box-attached-to-cylinder.gif)
+
 ## Making Scripted Objects Attachable
 
 ### Add Attach Extension
