@@ -7,6 +7,8 @@ The following **GIF** demonstrates attaching our custom box to a cylinder, and a
 
 ![Custom Box Attached To Cylinder Example](./box-attached-to-cylinder.gif)
 
+**NOTE:** The box is our custom scripted object, and the cylinder is a regular FreeCAD object generated from the Part workbench.
+
 ## Making Scripted Objects Attachable
 
 ### Add Attach Extension
