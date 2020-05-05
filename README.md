@@ -1,7 +1,7 @@
 # FreeCAD Part Attachment Python Example
 The purpose of this repository is to show a minimal example of [FreeCAD's Part Attachment Feature](https://wiki.freecadweb.org/Part_Attachment) in Python using [scripted objects](https://wiki.freecadweb.org/FeaturePython_Objects) in Python.
 
-See [PartAttachmentExample.FCMacro](./PartAttachmentExample.FCMacro) for the full and complete example.
+See [part_attachment_example.py](./part_attachment_example.py) for the full and complete example.
 
 The following **GIF** demonstrates attaching our custom box to a cylinder, and automatically updating it's position when the cylinder's position changes.
 
