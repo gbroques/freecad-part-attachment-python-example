@@ -16,7 +16,7 @@ class Box():
 
         Arguments
         ---------
-        - obj: an existing document object or an object created with FreeCAD.Document.addObject('App::FeaturePython', '{name}').
+        - obj: an existing document object or an object created with FreeCAD.Document.addObject('Part::FeaturePython', '{name}').
         """
 
         self.Type = 'Box'
@@ -29,10 +29,19 @@ class Box():
         obj.addProperty('App::PropertyLength', 'Height',
                         'Dimensions', 'Box height').Height = 10.0
 
+        # Needed to make this object "attachable",
+        # or able to attach parameterically to other objects
+        obj.addExtension('Part::AttachExtensionPython', obj)
+
     def execute(self, obj):
         """
         Called on document recompute
         """
+        # Needed to update position when attached-to object changes position.
+        # Reposition object based on Support, MapMode and MapPathParameter properties.
+        # Returns True if attachment calculation was successful, False if object is not attached and Placement wasn't updated,
+        obj.positionBySupport()
+
         obj.Shape = Part.makeBox(obj.Length, obj.Width, obj.Height)
 
 
